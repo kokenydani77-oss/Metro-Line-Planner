@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+}
+
+h1,
+h3 {
+    margin: 0 0 10px;
+}
+
+#screen-menu {
+    max-width: 450px;
+    margin: 80px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.menu-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-box input {
+    padding: 8px;
+    font-size: 16px;
+}
+
+.menu-box button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.secondary-btn {
+    background: #eee;
+}
+
+#screen-game {
+    padding: 20px;
+}
+
+#game-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+#game-area {
+    display: flex;
+    gap: 20px;
+}
+
+#board {
+    display: flex;
+    flex-direction: column;
+}
+
+.board-row {
+    display: flex;
+}
+
+.board-cell {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border: 1px solid #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.station {
+    background: #ffeebb;
+    font-weight: bold;
+    border: 2px solid #cc9;
+}
+
+.start-station {
+    border: 3px solid black !important;
+    box-sizing: border-box;
+    color: black !important;
+}
+
+#board-wrapper {
+    position: relative;
+}
+
+#board-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+#controls {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-box {
+    background: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#current-card {
+    font-size: 22px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px dashed #aaa;
+    min-height: 32px;
+}
+
+#draw-card {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.score-box {
+    background: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    min-height: 80px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 40px 0;
+}
+
+.modal-content {
+    background: white;
+    width: 90%;
+    max-width: 650px;
+    max-height: 85vh;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-y: auto;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    line-height: 1.5;
+}
+
+.close-btn {
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
